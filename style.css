@@ -1,0 +1,315 @@
+/* Cores principais */
+:root {
+    --primary-color: #003366;
+    /* Azul escuro */
+    --secondary-color: #FF0000;
+    /* Vermelho */
+    --accent-color: #FFFFFF;
+    /* Branco */
+    --text-color: #000000;
+    /* Preto */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--accent-color);
+    color: var(--text-color);
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--accent-color);
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+#hero {
+    background-color: var(--secondary-color);
+    color: var(--accent-color);
+    padding: 50px 0;
+    text-align: center;
+}
+
+#hero h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+#hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+#hero .btn {
+    background-color: var(--accent-color);
+    color: var(--secondary-color);
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+#servicos,
+#sobre,
+#contato {
+    padding: 50px 0;
+}
+
+#servicos h2,
+#sobre h2,
+#contato h2 {
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--accent-color);
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Seção de Contato */
+#contato {
+    background-color: var(--accent-color);
+    padding: 50px 0;
+}
+
+#contato h2 {
+    color: var(--primary-color);
+    text-align: center;
+   
+}
+
+#contato p {
+    text-align: center;
+    color: var(--text-color);
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+
+/* Estilizando o formulário */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: var(--primary-color);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+form:hover {
+    box-shadow: 0 0 20px rgb(0, 0, 0);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: var(--accent-color);
+    font-weight: bold;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+textarea.form-control {
+    height: 150px;
+    resize: vertical;
+}
+
+/* Botão com gradiente */
+.btn2 {
+    display: inline-block;
+    background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+    color: var(--accent-color);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease;
+    text-align: center;
+}
+
+.btn2:hover {
+    background: linear-gradient(45deg, var(--text-color), var(--secondary-color));
+    color: var(--accent-color);
+}
+
+/* Adicione seus estilos aqui */
+.message {
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+    text-align: center;
+
+}
+
+.error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+.korea {
+    display: inline-block;
+    background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+    color: var(--accent-color);
+    padding: 10px 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease;
+    text-align: center;
+
+}
+.korea:hover {
+    background: linear-gradient(45deg, var(--text-color), var(--secondary-color));
+    color: var(--accent-color);
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgb(0, 0, 0);
+
+}
+
+
+
+#sobre {
+    background-color: #fff; /* Cor de fundo para a seção */
+    border-radius: 10px; /* Bordas arredondadas */
+    padding: 40px 20px;
+    margin-bottom: 50px;
+    text-align: center; /* Centraliza o texto dentro da seção */
+
+}
+
+#contato {
+    margin-top: -100px;
+    background-color: #fff; /* Cor de fundo para a seção */
+    border-radius: 10px; /* Bordas arredondadas */
+    padding: 40px 20px;
+    margin-bottom: 50px;
+    text-align: center; /* Centraliza o texto dentro da seção */
+}
+
+#servicos {
+    background-color: #fff;
+    padding: 40px 20px;
+
+}
+
+h2 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Estilo para a Grade 3x3 */
+.servicos-horizontal {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Define 3 colunas de tamanho igual */
+    gap: 20px; /* Espaço entre os itens */
+}
+
+.servico {
+   
+    border: 1px solid #000000; /* Borda sutil */
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.servico h3 {
+    margin-top: 0;
+    color: #000000; /* Cor do título */
+}
+
+.servico p {
+    color: #721c24; /* Cor do texto */
+    margin-bottom: 0;
+}
+
+.servico:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 992px) {
+    .servicos-horizontal {
+        grid-template-columns: repeat(2, 1fr); /* Muda para 2 colunas em telas médias */
+    }
+}
+
+@media (max-width: 600px) {
+    .servicos-horizontal {
+        grid-template-columns: 1fr; /* Muda para 1 coluna em telas pequenas */
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block; /* Remove o espaço abaixo da imagem */
+}
+.logo{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: block;
+}

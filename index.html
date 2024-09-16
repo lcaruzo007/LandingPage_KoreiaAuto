@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    
+
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="Koreia Auto Center - Serviços automotivos em Campinas, São Paulo">
@@ -12,8 +12,11 @@
     <title>Koreia Auto Center</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
+
 <body>
     <header>
         <div class="container">
@@ -39,69 +42,78 @@
 
     <section id="servicos">
         <div class="container">
-            <h2>Nossos Serviços</h2>
+            <h2>Nossos Serviços: </h2>
             <div class="servicos-horizontal">
-                <div class="servico">
+                <div class="servico cinza">
                     <h3>Troca de Óleo</h3>
-                    <p>Utilizamos óleo de alta qualidade para prolongar a vida útil do seu motor.</p>
                 </div>
                 <div class="servico">
-                    <h3>Alinhamento e Balanceamento</h3>
-                    <p>Deixe seu carro rodando suave com nosso serviço de alinhamento e balanceamento.</p>
+                    <h3>Freios</h3>
                 </div>
                 <div class="servico">
-                    <h3>Revisão Completa</h3>
-                    <p>Garantia de segurança e performance com nossa revisão completa.</p>
+                    <h3>Embreagem</h3>
                 </div>
                 <div class="servico">
-                    <h3>Troca de Pneus</h3>
-                    <p>Substituímos os pneus com equipamentos modernos e de forma segura.</p>
+                    <h3>Correias</h3>
                 </div>
                 <div class="servico">
-                    <h3>Inspeção Veicular</h3>
-                    <p>Realizamos inspeções detalhadas para garantir o desempenho do veículo.</p>
+                    <h3>Pneus</h3>
                 </div>
                 <div class="servico">
-                    <h3>Lavagem Completa</h3>
-                    <p>Mantenha seu carro sempre limpo com nossa lavagem completa e detalhada.</p>
+                    <h3>Alinhamento</h3>
                 </div>
-                
+                <div class="servico">
+                    <h3>Balanceamento</h3>
+                </div>
+                <div class="servico">
+                    <h3>Baterias</h3>
+                </div>
+                <div class="servico">
+                    <h3>Revisão Geral</h3>
+                </div>
             </div>
-        </div>
     </section>
-    
-    
- 
+
+
+
     <section id="sobre">
         <div class="container">
             <h2>Sobre Nós</h2>
-            <p>No Koreia Auto Center, temos mais de 10 anos de experiência no mercado automotivo, oferecendo um atendimento personalizado e serviços de qualidade para nossos clientes.</p>
-            <img src="koreia.jpg" alt="Imagem" class="korea" id="korea" title="Nossa unidade em Campinas-SP"> 
+            <p><div id="somos">Koreia Auto Center, localizada na Av. José Bonifácio, 367, Campinas,
+                é referência nos mais diversos serviços automotivos. <br>Nosso foco é garantir a segurança e o 
+                desempenho do seu veículo, com atendimento especializado.<br>Funcionamos de segunda a sexta das 08:00 às 18:00, e aos sábados das 08:00 às 12:00.</p>
+                <h5>Venha nos visitar!</h5></div>
+            <img src="koreia.jpg" alt="Imagem" class="korea" id="korea" title="Nossa unidade em Campinas-SP">
         </div>
     </section>
-
     <section id="contato">
-        <div id="message" class="message" style="margin-left: 25%;" ></div>
-            <h2>Fale Conosco</h2>
-            <p>Entre em contato para agendar seu serviço ou tirar dúvidas.</p>
-            <form id="contactForm" action="send_email.php" method="POST">
-                <div class="form-group">
-                    <label for="nome">Seu Nome</label>
-                    <input type="text" class="form-control" id="nome" name="nome" placeholder="Seu Nome" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Seu E-mail</label>
-                    <input type="email" class="form-control" id="email" name="email" placeholder="Seu E-mail" required>
-                </div>
-                <div class="form-group">
-                    <label for="mensagem">Sua Mensagem</label>
-                    <textarea class="form-control" id="mensagem" name="mensagem" placeholder="Sua Mensagem" required></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary btn2">Enviar Mensagem</button>
-            </form>
-          
-        </div>
+        <div id="message" class="message" style="margin-left: 25%;"></div>
+        <h2>Fale Conosco</h2>
+        
+        <a href="https://wa.me/551935167851" target="_blank" class="btn btn-success btn-lg " style="margin-top: 20px;">
+             WhatsApp <i class="fab fa-whatsapp"></i>
+        </a>
+    
+        <p style="margin-top: 20px;"><strong>Outra opção:</strong></p>
+        <p>Entre em contato para agendar seu serviço ou tirar dúvidas.</p>
+    
+        <form id="contactForm" action="send_email.php" method="POST">
+            <div class="form-group">
+                <label for="nome">Seu Nome</label>
+                <input type="text" class="form-control" id="nome" name="nome" placeholder="Seu Nome" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Seu E-mail</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="Seu E-mail" required>
+            </div>
+            <div class="form-group">
+                <label for="mensagem">Sua Mensagem</label>
+                <textarea class="form-control" id="mensagem" name="mensagem" placeholder="Sua Mensagem" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn2">Enviar Mensagem</button>
+        </form>
     </section>
+    
     <footer>
         <div class="container">
             <p>&copy; 2024 Koreia Auto Center. Todos os direitos reservados.</p>
@@ -110,4 +122,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>
